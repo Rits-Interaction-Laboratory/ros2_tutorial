@@ -35,7 +35,7 @@ git環境がない場合，zipで落としてもらって構いません．ダ�
 `git clone https://github.com/Rits-Interaction-Laboratory/ros2_tutorial.git`
 
 ## 4. dockerの起動
-3番の手順で準備した`colcon_ws/src`のディレクトリで，コマンドプロンプト等を起動して下さい．<br>
+3番の手順で準備した`colcon_ws`のディレクトリで，コマンドプロンプト等を起動して下さい．<br>
 コマンドプロンプトが起動したら，以下のコマンドを実行して下さい．<br>
 `docker run -it -v ${pwd}:/root/colcon_ws --name ros_semi ros:humble`<br>
 （docker run のvオプション， `-v マウント元:マウント先`　でhostとdockerで共有するディレクトリを指定しています．この状態としておくことで，ホストOS側のvscode等，エディタで加えた編集がdockerコンテナ側にも反映されます．）
